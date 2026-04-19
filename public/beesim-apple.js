@@ -8,7 +8,56 @@ document.addEventListener('DOMContentLoaded', () => {
     initParticles();
     initStars();
     initPricingTabs();
+    initCountUpAnimations();
 });
+
+// ========================================
+// Count Up Animations
+// ========================================
+function initCountUpAnimations() {
+    const countUpElements = document.querySelectorAll('.countup');
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                entry.target.classList.add('counted');
+                animateCountUp(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    countUpElements.forEach(el => observer.observe(el));
+}
+
+function animateCountUp(element) {
+    const target = parseFloat(element.getAttribute('data-target'));
+    const duration = 2000; // 2 seconds
+    const steps = 60;
+    const increment = target / steps;
+    const stepDuration = duration / steps;
+    let current = 0;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        
+        // Format number based on target
+        if (target === 99.9) {
+            element.textContent = current.toFixed(1);
+        } else if (target >= 100) {
+            element.textContent = Math.floor(current);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, stepDuration);
+}
 
 // ========================================
 // Pricing Tabs
