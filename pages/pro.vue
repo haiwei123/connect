@@ -1,11 +1,13 @@
 <template>
   <div style="position: relative;">
     <NuxtLink to="/" class="back-home">← 返回首页</NuxtLink>
-    <iframe src="/pro.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+    <iframe :src="`${config.app.baseURL}pro.html`" style="width: 100%; height: 100vh; border: none;"></iframe>
   </div>
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
+
 useHead({
   title: 'BEESIM Pro'
 })

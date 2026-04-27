@@ -6,7 +6,7 @@
     <nav class="nav" :class="{ dark: isDarkSection }">
       <div class="nav-content">
         <a href="#" class="nav-logo">
-          <img src="/logo1.png" alt="BEESIM Logo" class="logo-img" />
+          <img :src="`${config.app.baseURL}logo1.png`" alt="BEESIM Logo" class="logo-img" />
         </a>
         <div class="nav-links">
           <a href="#" @click.prevent="scrollToSection(0)" :class="{ active: currentSection === 0 }">首页</a>
@@ -42,7 +42,7 @@
       <section class="fp-section" data-index="0">
         <div class="section-bg">
           <div class="hero-bg-image">
-            <img src="/bg1.png" alt="" class="bg-image" />
+            <img :src="`${config.app.baseURL}bg1.png`" alt="" class="bg-image" />
           </div>
           <div class="bg-gradient-radial"></div>
         </div>
@@ -552,12 +552,14 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
+const config = useRuntimeConfig()
+
 useHead({
   title: 'BEESIM - Apple Style',
   link: [
     {
       rel: 'stylesheet',
-      href: '/beesim-apple.css'
+      href: `${config.app.baseURL}beesim-apple.css`
     }
   ]
 })
