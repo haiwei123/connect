@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEESIM - 全球eSIM解决方案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="beesim-pro.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                
+                <span class="logo-text">BEESIM</span>
+            </a>
+            <div class="nav-links">
+                <a href="#" data-section="0">首页</a>
+                <a href="#" data-section="1">产品</a>
+                <a href="#" data-section="2">使用指南</a>
+                <a href="#" data-section="3">套餐</a>
+                <a href="#" data-section="4">小程序</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">登录</a>
+                <a href="#" class="btn-primary">注册</a>
+                <div class="lang-switch">🌐 中文</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边指示器 -->
+    <div class="side-indicator">
+        <span class="dot active" data-section="0"></span>
+        <span class="dot" data-section="1"></span>
+        <span class="dot" data-section="2"></span>
+        <span class="dot" data-section="3"></span>
+        <span class="dot" data-section="4"></span>
+    </div>
+
+    <!-- 全屏容器 -->
+    <div class="fullpage" id="fullpage">
+
+        <!-- 第一屏: Hero -->
+        <section class="section" data-index="0">
+            <div class="section-bg hero-bg">
+                <div class="bg-pattern"></div>
+                <div class="bg-glow glow-1"></div>
+                <div class="bg-glow glow-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🌍</span>
+                        <span>全球200+国家和地区覆盖</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-highlight">BEESIM</span>带你<br>
+                        畅快玩转<span class="title-highlight">eSIM</span>
+                    </h1>
+                    <p class="hero-desc">
+                        让所有的手机都能体验eSIM的便捷<br>
+                        让出国旅行不再为数据网络发愁
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary btn-lg">
+                            <span>立即注册</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#" class="btn-outline btn-lg">了解更多</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-num">200+</span>
+                            <span class="stat-label">覆盖国家</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">500万+</span>
+                            <span class="stat-label">服务用户</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">99.9%</span>
+                            <span class="stat-label">网络稳定</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-phone">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-ui">
+                                    <div class="app-header">
+                                        <span>BEESIM</span>
+                                        <span class="status-online">● 已连接</span>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="card-flag">🇯🇵</div>
+                                        <div class="card-info">
+                                            <span class="card-country">日本</span>
+                                            <span class="card-plan">10GB 高速流量</span>
+                                        </div>
+                                        <div class="card-speed">
+                                            <span class="speed-num">156</span>
+                                            <span class="speed-unit">Mbps</span>
+                                        </div>
+                                    </div>
+                                    <div class="app-usage">
+                                        <div class="usage-header">
+                                            <span>流量使用</span>
+                                            <span class="usage-value">3.2GB / 10GB</span>
+                                        </div>
+                                        <div class="usage-bar">
+                                            <div class="usage-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="app-actions">
+                                        <div class="action-btn">
+                                            <span>📶</span>
+                                            <span>网络诊断</span>
+                                        </div>
+                                        <div class="action-btn">
+                                            <span>🛒</span>
+                                            <span>购买流量</span>
+                                        </div>
+                                        <div class="action-btn">
+                                            <span>📍</span>
+                                            <span>切换地区</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
+                        <div class="floating-card card-1">
+                            <span>🇯🇵</span> 日本 eSIM 已激活
+                        </div>
+                        <div class="floating-card card-2">
+                            <span>⚡</span> 5G 网络可用
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="mouse"></div>
+                <span>向下滚动</span>
+            </div>
+        </section>
+
+        <!-- 第二屏: 产品特性 -->
+        <section class="section" data-index="1">
+            <div class="section-bg">
+                <div class="bg-dots"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">产品特性</span>
+                    <h2 class="section-title">为什么选择 <span class="title-highlight">BEESIM</span></h2>
+                    <p class="section-desc">我们重新定义了全球移动连接体验</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card feature-main">
+                        <div class="feature-icon">⚡</div>
+                        <h3>即时激活</h3>
+                        <p>扫码即用，无需等待实体卡邮寄。落地即可连接，让您的旅程从第一秒开始就保持在线。</p>
+                        <div class="feature-stats">
+                            <div class="f-stat">
+                                <span class="f-num">3秒</span>
+                                <span class="f-label">激活时间</span>
+                            </div>
+                            <div class="f-stat">
+                                <span class="f-num">0等待</span>
+                                <span class="f-label">即买即用</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>全球覆盖</h3>
+                        <p>200+国家和地区无缝漫游，一张eSIM走遍全球</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>超值价格</h3>
+                        <p>相比传统漫游资费节省高达90%，透明定价无隐藏费用</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>安全可靠</h3>
+                        <p>企业级加密保护，支持双卡双待，不影响原有号码</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>便捷管理</h3>
+                        <p>通过微信小程序轻松管理，实时查看流量使用</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三屏: 使用步骤 -->
+        <section class="section section-dark" data-index="2">
+            <div class="section-bg">
+                <div class="bg-glow glow-center"></div>
+                <div class="particle-field" id="particles"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">使用指南</span>
+                    <h2 class="section-title">按照以下步骤使用您的<span class="title-highlight">数据计划</span></h2>
+                </div>
+                <div class="steps-container">
+                    <div class="steps-line"></div>
+                    <div class="steps-grid">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-icon">🛒</div>
+                            <h3>购买（BEESIM）卡</h3>
+                            <p>如果您已拥有BEESIM卡，则可以直接购买合适的eSIM</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-icon">🌐</div>
+                            <h3>购买合适的eSIM</h3>
+                            <p>根据您的旅行目的地购买合适的eSIM</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-icon">📲</div>
+                            <h3>扫码添加eSIM</h3>
+                            <p>使用我们的小程序BEESIM管理您的eSIM，您可以添加、启用、停用或删除eSIM</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-icon">✨</div>
+                            <h3>启用号码以激活您的eSIM</h3>
+                            <p>到达目的地后启用号码以激活您的eSIM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四屏: 套餐价格 -->
+        <section class="section" data-index="3">
+            <div class="section-bg">
+                <div class="bg-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">套餐价格</span>
+                    <h2 class="section-title">选择适合您的<span class="title-highlight">套餐</span></h2>
+                </div>
+                <div class="pricing-tabs">
+                    <button class="tab active">🇯🇵 日本</button>
+                    <button class="tab">🇰🇷 韩国</button>
+                    <button class="tab">🇹🇭 泰国</button>
+                    <button class="tab">🇺🇸 美国</button>
+                    <button class="tab">🇪🇺 欧洲</button>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <span class="price-icon">🎒</span>
+                            <h3>轻量版</h3>
+                            <p>短途旅行</p>
+                        </div>
+                        <div class="price-amount">
+                            <span class="currency">¥</span>
+                            <span class="amount">29</span>
+                        </div>
+                        <div class="price-meta">
+                            <span class="data-tag">1GB</span>
+                            <span>3天有效</span>
+                        </div>
+                        <ul class="price-list">
+                            <li>✓ 4G LTE 网络</li>
+                            <li>✓ 即时激活</li>
+                            <li>✓ 在线客服</li>
+                        </ul>
+                        <a href="#" class="btn-card">选择套餐</a>
+                    </div>
+                    <div class="price-card featured">
+                        <div class="featured-tag">最受欢迎</div>
+                        <div class="price-header">
+                            <span class="price-icon">✈️</span>
+                            <h3>标准版</h3>
+                            <p>性价比之选</p>
+                        </div>
+                        <div class="price-amount">
+                            <span class="currency">¥</span>
+                            <span class="amount">68</span>
+                        </div>
+                        <div class="price-meta">
+                            <span class="data-tag">5GB</span>
+                            <span>7天有效</span>
+                        </div>
+                        <ul class="price-list">
+                            <li>✓ 5G 网络支持</li>
+                            <li>✓ 即时激活</li>
+                            <li>✓ 热点共享</li>
+                            <li>✓ 优先客服</li>
+                        </ul>
+                        <a href="#" class="btn-primary btn-card">选择套餐</a>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-header">
+                            <span class="price-icon">🌟</span>
+                            <h3>无限版</h3>
+                            <p>长途旅行</p>
+                        </div>
+                        <div class="price-amount">
+                            <span class="currency">¥</span>
+                            <span class="amount">128</span>
+                        </div>
+                        <div class="price-meta">
+                            <span class="data-tag">无限</span>
+                            <span>15天有效</span>
+                        </div>
+                        <ul class="price-list">
+                            <li>✓ 5G 网络支持</li>
+                            <li>✓ 无限流量</li>
+                            <li>✓ 热点共享</li>
+                            <li>✓ VIP客服</li>
+                        </ul>
+                        <a href="#" class="btn-card">选择套餐</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五屏: 小程序 + Footer -->
+        <section class="section section-dark" data-index="4">
+            <div class="section-bg">
+                <div class="bg-glow glow-center"></div>
+            </div>
+            <div class="container">
+                <div class="miniapp-section">
+                    <div class="miniapp-left">
+                        <div class="qr-card">
+                            <div class="qr-icon"></div>
+                            <div class="qr-code"></div>
+                            <p>微信扫码使用小程序</p>
+                        </div>
+                    </div>
+                    <div class="miniapp-right">
+                        <span class="section-tag">微信小程序</span>
+                        <h2 class="section-title">微信小程序-<span class="title-highlight">BEESIM</span></h2>
+                        <p class="section-desc">通过BLE蓝牙协议与eUICC交互，进而实现管理eSIM的写入、启用、停用和删除！</p>
+                        <div class="miniapp-features">
+                            <div class="mp-feature">
+                                <span class="mp-icon">📱</span>
+                                <div>
+                                    <strong>便捷管理</strong>
+                                    <p>随时随地管理您的eSIM</p>
+                                </div>
+                            </div>
+                            <div class="mp-feature">
+                                <span class="mp-icon">🔄</span>
+                                <div>
+                                    <strong>实时同步</strong>
+                                    <p>流量使用实时更新</p>
+                                </div>
+                            </div>
+                            <div class="mp-feature">
+                                <span class="mp-icon">🛒</span>
+                                <div>
+                                    <strong>在线购买</strong>
+                                    <p>支持微信支付宝支付</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer-main">
+                        <div class="footer-brand">
+                            <div class="logo">
+                                
+                                <span class="logo-text">BEESIM</span>
+                            </div>
+                            <p>让世界触手可及</p>
+                        </div>
+                        <div class="footer-contact">
+                            <span>📧 support@beesim.com</span>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>Copyright © 2026 BEESIM All Rights Reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="beesim-pro.js"></script>
+</body>
+</html>

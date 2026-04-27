@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEESIM - 全球 eSIM 解决方案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="beesim-apple.css">
+    <style>
+        .icon { width: 1em; height: 1em; display: inline-block; vertical-align: middle; }
+        .card-icon .icon { width: 36px; height: 36px; }
+        .step-icon .icon { width: 28px; height: 28px; }
+        .showcase-icon .icon { width: 24px; height: 24px; }
+        .card-icon-small .icon { width: 28px; height: 28px; }
+        .trust-icon .icon { width: 18px; height: 18px; }
+        .float-icon { font-size: 32px; }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="#f5a623" stroke-width="2"/>
+                    <path d="M20 8C20 8 12 14 12 22C12 26 15 30 20 30C25 30 28 26 28 22C28 14 20 8 20 8Z" fill="#f5a623"/>
+                    <ellipse cx="16" cy="18" rx="2" ry="3" fill="#000"/>
+                    <ellipse cx="24" cy="18" rx="2" ry="3" fill="#000"/>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="#" data-section="0">首页</a>
+                <a href="#" data-section="1">产品</a>
+                <a href="#" data-section="2">特性</a>
+                <a href="#" data-section="3">价格</a>
+                <a href="#" data-section="4">支持</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">登录</a>
+                <a href="#" class="nav-btn">立即购买</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面指示器 -->
+    <div class="page-indicator">
+        <span class="dot active" data-section="0"></span>
+        <span class="dot" data-section="1"></span>
+        <span class="dot" data-section="2"></span>
+        <span class="dot" data-section="3"></span>
+        <span class="dot" data-section="4"></span>
+    </div>
+
+    <!-- 全屏容器 -->
+    <div class="fullpage-container" id="fullpage">
+        
+        <!-- Section 0: Hero -->
+        <section class="fp-section" data-index="0">
+            <div class="section-bg">
+                <div class="bg-gradient"></div>
+                <div class="bg-grid"></div>
+                <div class="bg-orb orb-1"></div>
+                <div class="bg-orb orb-2"></div>
+                <div class="floating-icons">
+                    <svg class="float-icon" style="top: 15%; left: 10%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <svg class="float-icon" style="top: 25%; right: 15%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <svg class="float-icon" style="top: 60%; left: 8%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    <svg class="float-icon" style="top: 70%; right: 10%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <svg class="float-icon" style="top: 40%; left: 5%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <svg class="float-icon" style="top: 80%; left: 20%;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+            </div>
+            <div class="section-inner hero-section">
+                <div class="hero-main">
+                    <div class="hero-content">
+                        <h1 class="hero-title">BEESIM</h1>
+                        <h2 class="hero-subtitle">全球连接，触手可及</h2>
+                        <p class="hero-desc">一张 eSIM，畅游 200+ 国家和地区<br>即买即用，告别实体卡的繁琐</p>
+                        <div class="hero-cta">
+                            <a href="#" class="btn-primary">立即购买</a>
+                            <a href="#" class="btn-secondary">了解更多 ›</a>
+                        </div>
+                        <div class="hero-stats-inline">
+                            <span><strong>200+</strong> 国家</span>
+                            <span><strong>500万+</strong> 用户</span>
+                            <span><strong>¥29</strong> 起</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="sim-card-3d" id="simCard">
+                            <div class="sim-card-inner">
+                                <div class="sim-card-face sim-card-front">
+                                    <div class="sim-brand">BEESIM</div>
+                                    <div class="sim-chip">
+                                        <div class="chip-contact"></div>
+                                        <div class="chip-contact"></div>
+                                        <div class="chip-contact"></div>
+                                        <div class="chip-contact"></div>
+                                        <div class="chip-contact"></div>
+                                        <div class="chip-contact"></div>
+                                    </div>
+                                    <div class="sim-cutout"></div>
+                                </div>
+                            </div>
+                            <div class="sim-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-hint">
+                    <span>向下滚动</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Product -->
+        <section class="fp-section" data-index="1">
+            <div class="section-bg">
+                <div class="bg-dots"></div>
+                <div class="bg-circle circle-1"></div>
+                <div class="bg-circle circle-2"></div>
+                <div class="bg-line line-1"></div>
+                <div class="bg-line line-2"></div>
+            </div>
+            <div class="section-inner product-section">
+                <div class="product-layout">
+                    <div class="product-left">
+                        <span class="section-label">全新体验</span>
+                        <h2 class="section-title">告别实体 SIM 卡</h2>
+                        <p class="section-desc">BEESIM 采用先进的 eSIM 技术，让您无需更换实体卡，即可在全球范围内享受高速网络连接。</p>
+                        <div class="product-stats">
+                            <div class="p-stat">
+                                <span class="p-stat-num">200+</span>
+                                <span class="p-stat-label">覆盖国家</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-num">99.9%</span>
+                                <span class="p-stat-label">网络稳定</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-num">3秒</span>
+                                <span class="p-stat-label">激活时间</span>
+                            </div>
+                        </div>
+                        <div class="product-cta">
+                            <a href="#" class="btn-primary">立即体验</a>
+                            <a href="#" class="btn-text">查看支持设备 →</a>
+                        </div>
+                    </div>
+                    <div class="product-right">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="card-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                </div>
+                                <h3>即时激活</h3>
+                                <p>扫码即用，3 秒完成激活，落地即可连接网络</p>
+                                <div class="card-tag">最快体验</div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                </div>
+                                <h3>全球覆盖</h3>
+                                <p>200+ 国家和地区，一张卡走遍全球</p>
+                                <div class="card-tag">最广覆盖</div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                </div>
+                                <h3>超值价格</h3>
+                                <p>相比传统漫游，节省高达 90%</p>
+                                <div class="card-tag">最省钱</div>
+                            </div>
+                            <div class="product-card">
+                                <div class="card-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                </div>
+                                <h3>安全可靠</h3>
+                                <p>企业级加密，保护您的数据安全</p>
+                                <div class="card-tag">最安全</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-brands">
+                    <span class="brands-label">支持设备</span>
+                    <div class="brands-list">
+                        <span class="brand-item">iPhone</span>
+                        <span class="brand-item">Samsung</span>
+                        <span class="brand-item">Google Pixel</span>
+                        <span class="brand-item">iPad</span>
+                        <span class="brand-item">Apple Watch</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Features -->
+        <section class="fp-section fp-dark" data-index="2">
+            <div class="section-bg">
+                <div class="bg-glow glow-1"></div>
+                <div class="bg-glow glow-2"></div>
+                <div class="particle-field" id="particleField"></div>
+                <div class="tech-lines">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M0,50 Q25,30 50,50 T100,50" class="tech-path"/>
+                        <path d="M0,30 Q25,50 50,30 T100,30" class="tech-path"/>
+                        <path d="M0,70 Q25,50 50,70 T100,70" class="tech-path"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="section-inner feature-section">
+                <div class="feature-header">
+                    <span class="section-label">简单易用</span>
+                    <h2 class="section-title">三步完成设置，就是这么简单</h2>
+                </div>
+                <div class="feature-main">
+                    <div class="feature-steps">
+                        <div class="step-card">
+                            <div class="step-num-big">01</div>
+                            <div class="step-content">
+                                <div class="step-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                                </div>
+                                <h3>选择套餐</h3>
+                                <p>根据目的地选择合适的流量套餐，支持单国或多国组合</p>
+                            </div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-num-big">02</div>
+                            <div class="step-content">
+                                <div class="step-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                                </div>
+                                <h3>扫码安装</h3>
+                                <p>使用手机相机扫描二维码，按提示完成 eSIM 安装</p>
+                            </div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-num-big">03</div>
+                            <div class="step-content">
+                                <div class="step-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+                                </div>
+                                <h3>开始使用</h3>
+                                <p>到达目的地后开启数据漫游，即刻享受高速网络</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-showcase">
+                        <div class="showcase-phone">
+                            <div class="phone-frame-mini">
+                                <div class="phone-screen-mini">
+                                    <div class="mini-header">
+                                        <span style="display: flex; align-items: center; gap: 6px;">
+                                            <svg width="16" height="16" viewBox="0 0 40 40" fill="none">
+                                                <circle cx="20" cy="20" r="18" stroke="#f5a623" stroke-width="2"/>
+                                                <path d="M20 8C20 8 12 14 12 22C12 26 15 30 20 30C25 30 28 26 28 22C28 14 20 8 20 8Z" fill="#f5a623"/>
+                                            </svg>
+                                            BEESIM
+                                        </span>
+                                        <span class="status-dot"></span>
+                                    </div>
+                                    <div class="mini-content">
+                                        <div class="speed-display-mini">
+                                            <div class="speed-ring-mini">
+                                                <svg viewBox="0 0 80 80">
+                                                    <circle cx="40" cy="40" r="35" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                                                    <circle cx="40" cy="40" r="35" fill="none" stroke="#f5a623" stroke-width="6" 
+                                                        stroke-dasharray="220" stroke-dashoffset="55" stroke-linecap="round"/>
+                                                </svg>
+                                                <div class="speed-text-mini">
+                                                    <span class="speed-val">156</span>
+                                                    <span class="speed-unit">Mbps</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mini-info">
+                                            <div class="info-row">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                                <span>日本 · 东京</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                                                <span>5G 已连接</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                                <span>7.2 GB / 10 GB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-glow-mini"></div>
+                        </div>
+                        <div class="showcase-features">
+                            <div class="showcase-item">
+                                <span class="showcase-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                </span>
+                                <div class="showcase-text">
+                                    <strong>5G 极速</strong>
+                                    <span>高达 500Mbps</span>
+                                </div>
+                            </div>
+                            <div class="showcase-item">
+                                <span class="showcase-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="18" rx="2" ry="2"/><path d="M22 6V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><line x1="6" y1="10" x2="6.01" y2="10"/></svg>
+                                </span>
+                                <div class="showcase-text">
+                                    <strong>省电模式</strong>
+                                    <span>智能切换网络</span>
+                                </div>
+                            </div>
+                            <div class="showcase-item">
+                                <span class="showcase-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </span>
+                                <div class="showcase-text">
+                                    <strong>安全加密</strong>
+                                    <span>企业级保护</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Pricing -->
+        <section class="fp-section" data-index="3">
+            <div class="section-bg">
+                <div class="bg-gradient-soft"></div>
+                <div class="bg-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="section-inner pricing-section">
+                <div class="pricing-layout">
+                    <div class="pricing-left">
+                        <span class="section-label">透明定价</span>
+                        <h2 class="section-title">选择适合您的套餐</h2>
+                        <p class="section-desc">无隐藏费用，用多少付多少，随时可以升级或续费</p>
+                        
+                        <div class="pricing-tabs">
+                            <button class="p-tab active" data-region="japan">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                日本
+                            </button>
+                            <button class="p-tab" data-region="korea">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                韩国
+                            </button>
+                            <button class="p-tab" data-region="thailand">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                泰国
+                            </button>
+                            <button class="p-tab" data-region="usa">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                美国
+                            </button>
+                            <button class="p-tab" data-region="europe">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                欧洲
+                            </button>
+                        </div>
+                        
+                        <div class="pricing-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>购买后立即收到 eSIM</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>支持支付宝/微信支付</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>7天无理由退款</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>24/7 在线客服支持</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-right">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="card-header">
+                                    <span class="card-icon-small">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    </span>
+                                    <h3>轻量版</h3>
+                                    <p>短途旅行首选</p>
+                                </div>
+                                <div class="price">
+                                    <span class="price-currency">¥</span>
+                                    <span class="price-amount">29</span>
+                                </div>
+                                <div class="price-meta">
+                                    <span class="price-data">1 GB</span>
+                                    <span class="price-days">3 天有效</span>
+                                </div>
+                                <ul class="price-features">
+                                    <li><span class="check">✓</span> 4G LTE 网络</li>
+                                    <li><span class="check">✓</span> 即时激活</li>
+                                    <li><span class="check">✓</span> 在线客服</li>
+                                    <li class="disabled"><span class="check">-</span> 热点共享</li>
+                                </ul>
+                                <a href="#" class="btn-card">选择套餐</a>
+                            </div>
+                            
+                            <div class="pricing-card featured">
+                                <div class="featured-badge">最受欢迎</div>
+                                <div class="card-header">
+                                    <span class="card-icon-small">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+                                    </span>
+                                    <h3>标准版</h3>
+                                    <p>性价比之选</p>
+                                </div>
+                                <div class="price">
+                                    <span class="price-currency">¥</span>
+                                    <span class="price-amount">68</span>
+                                </div>
+                                <div class="price-meta">
+                                    <span class="price-data">5 GB</span>
+                                    <span class="price-days">7 天有效</span>
+                                </div>
+                                <ul class="price-features">
+                                    <li><span class="check">✓</span> 5G 网络支持</li>
+                                    <li><span class="check">✓</span> 即时激活</li>
+                                    <li><span class="check">✓</span> 优先客服</li>
+                                    <li><span class="check">✓</span> 热点共享</li>
+                                </ul>
+                                <a href="#" class="btn-card-primary">选择套餐</a>
+                                <div class="save-badge">省 ¥20</div>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <div class="card-header">
+                                    <span class="card-icon-small">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <h3>无限版</h3>
+                                    <p>长途旅行必备</p>
+                                </div>
+                                <div class="price">
+                                    <span class="price-currency">¥</span>
+                                    <span class="price-amount">128</span>
+                                </div>
+                                <div class="price-meta">
+                                    <span class="price-data">无限流量</span>
+                                    <span class="price-days">15 天有效</span>
+                                </div>
+                                <ul class="price-features">
+                                    <li><span class="check">✓</span> 5G 网络支持</li>
+                                    <li><span class="check">✓</span> 即时激活</li>
+                                    <li><span class="check">✓</span> VIP 专属客服</li>
+                                    <li><span class="check">✓</span> 热点共享</li>
+                                </ul>
+                                <a href="#" class="btn-card">选择套餐</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-footer">
+                    <div class="trust-badges">
+                        <div class="trust-item">
+                            <span class="trust-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </span>
+                            <span>安全支付</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </span>
+                            <span>即时发货</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </span>
+                            <span>24/7 客服</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                            </span>
+                            <span>无忧退款</span>
+                        </div>
+                    </div>
+                    <p class="pricing-note">需要更多流量？<a href="#">查看全部套餐</a> 或 <a href="#">联系我们</a> 获取企业定制方案</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: CTA & Footer -->
+        <section class="fp-section fp-dark" data-index="4">
+            <div class="section-bg">
+                <div class="bg-glow glow-center"></div>
+                <div class="bg-stars" id="starsField"></div>
+                <div class="globe-wireframe">
+                    <div class="globe-ring ring-1"></div>
+                    <div class="globe-ring ring-2"></div>
+                    <div class="globe-ring ring-3"></div>
+                </div>
+            </div>
+            <div class="section-inner cta-section">
+                <div class="cta-content">
+                    <h2>准备好开始了吗？</h2>
+                    <p>立即获取您的 BEESIM，开启全球连接之旅</p>
+                    <a href="#" class="btn-primary btn-large">立即购买</a>
+                    <div class="cta-features">
+                        <span style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            200+ 国家覆盖
+                        </span>
+                        <span style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            即时激活
+                        </span>
+                        <span style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            24/7 客服
+                        </span>
+                    </div>
+                </div>
+                <footer class="mini-footer">
+                    <p>© 2026 BEESIM. All Rights Reserved. | support@beesim.com</p>
+                </footer>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="beesim-apple.js"></script>
+</body>
+</html>
