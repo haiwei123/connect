@@ -41,20 +41,10 @@
       <!-- Section 0: Hero / 首页 -->
       <section class="fp-section" data-index="0">
         <div class="section-bg">
-          <div class="banner-top-bg-wrapper">
-            <img src="/banner-top-bg.png" alt="" class="banner-top-bg" />
+          <div class="hero-bg-image">
+            <img src="/bg1.png" alt="" class="bg-image" />
           </div>
           <div class="bg-gradient-radial"></div>
-          <div class="bg-dots-hero"></div>
-          <div class="bg-circle-hero circle-hero-1"></div>
-          <div class="bg-circle-hero circle-hero-2"></div>
-          <div class="bg-circle-hero circle-hero-3"></div>
-          <div class="floating-shapes">
-            <div class="shape-float shape-1"></div>
-            <div class="shape-float shape-2"></div>
-            <div class="shape-float shape-3"></div>
-            <div class="shape-float shape-4"></div>
-          </div>
         </div>
         <div class="section-inner hero-section">
           <div class="hero-content-center">
@@ -638,6 +628,8 @@ function handleKeydown(e) {
 }
 
 onMounted(() => {
+  if (typeof window === 'undefined') return
+  
   window.addEventListener('wheel', handleWheel, { passive: false })
   window.addEventListener('touchstart', handleTouchStart, { passive: true })
   window.addEventListener('touchend', handleTouchEnd, { passive: true })
@@ -645,10 +637,12 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  window.removeEventListener('wheel', handleWheel)
-  window.removeEventListener('touchstart', handleTouchStart)
-  window.removeEventListener('touchend', handleTouchEnd)
-  window.removeEventListener('keydown', handleKeydown)
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('wheel', handleWheel)
+    window.removeEventListener('touchstart', handleTouchStart)
+    window.removeEventListener('touchend', handleTouchEnd)
+    window.removeEventListener('keydown', handleKeydown)
+  }
 })
 </script>
 
