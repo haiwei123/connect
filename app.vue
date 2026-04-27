@@ -5,6 +5,8 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
+
 useHead({
   link: [
     {
@@ -17,12 +19,12 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: '/beesim.css'
+      href: `${config.app.baseURL}beesim.css`
     }
   ],
   script: [
     {
-      src: '/beesim.js',
+      src: `${config.app.baseURL}beesim.js`,
       defer: true
     }
   ]
