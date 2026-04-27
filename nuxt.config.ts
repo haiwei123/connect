@@ -18,6 +18,6 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: '/',
+    baseURL: '/connect/',
   }
 })
