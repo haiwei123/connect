@@ -13,12 +13,12 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/', '/blue', '/pro', '/apple'],
-      crawlLinks: true,
-      autoSubfolderIndex: false
+      routes: ['/', '/blue', '/pro', '/apple', '/esim'],
+      crawlLinks: true
     }
   },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/connect/',
+    cdnURL: process.env.NUXT_APP_BASE_URL || '/connect/',
   }
 })

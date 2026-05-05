@@ -25,6 +25,13 @@
           <p>苹果风格设计，简洁优雅</p>
           <span class="card-arrow">→</span>
         </NuxtLink>
+
+        <NuxtLink to="/esim" class="version-card">
+          <div class="card-icon">🌐</div>
+          <h2>eSIM 连接</h2>
+          <p>全球 eSIM 连接服务商</p>
+          <span class="card-arrow">→</span>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -79,6 +86,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .version-card::before {
